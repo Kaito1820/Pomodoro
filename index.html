@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Project/Pomodoro/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pomodoro</title>
+</head>
+<body>
+    <div class="timer">
+        <h2>Let's focus</h2>
+        <div id="clock">00:00</div>
+        
+        <div class="set-time">
+            <div id="focus-time">
+                focus <br>
+                <select>
+                    <option value="25">25m</option>
+                    <option value="45">45m</option>
+                    <option value="60">1h</option>
+                </select>
+            </div>
+            <div id="rest-time">
+                rest <br>
+                <select>
+                    <option value="5">5m</option>
+                    <option value="8">8m</option>
+                    <option value="10">10m</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="btn">
+            <button id="stop-btn">
+                <i class="fa-solid fa-stop"></i>
+            </button>
+            <button id="start-btn">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="reset-btn">
+                <i class="fa-solid fa-rotate-left"></i>
+            </button>
+        </div>
+    </div>
+        
+</body>
+<script src="/Project/Pomodoro/script.js"></script>
+</html>
