@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Project/Pomodoro/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -13,41 +13,49 @@
 </head>
 <body>
     <div class="timer">
-        <h2>Let's focus</h2>
-        <div id="clock">00:00</div>
+        <div class="clock-focus circle active">
+            <p id="minutes_f"></p>
+            <p>:</p>
+            <p id="seconds_f"></p>
+        </div>
+        <div class="clock-rest circle">
+            <p id="minutes_r"></p>
+            <p>:</p>
+            <p id="seconds_r"></p>
+        </div>
         
         <div class="set-time">
-            <div id="focus-time">
-                focus <br>
-                <select>
+            <div class="focus-time">
+                <p>focus</p>
+                <select id="focus-option" class="option">
                     <option value="25">25m</option>
                     <option value="45">45m</option>
                     <option value="60">1h</option>
                 </select>
             </div>
-            <div id="rest-time">
-                rest <br>
-                <select>
+            <div class="rest-time">
+                <p>rest</p>
+                <select id="rest-option" class="option">
                     <option value="5">5m</option>
-                    <option value="8">8m</option>
                     <option value="10">10m</option>
+                    <option value="15">15m</option>
                 </select>
             </div>
         </div>
 
-        <div class="btn">
-            <button id="stop-btn">
-                <i class="fa-solid fa-stop"></i>
-            </button>
-            <button id="start-btn">
+        <div class="btn-section">
+            <button id="start-btn" class="button active_btn">
                 <i class="fa-solid fa-play"></i>
             </button>
-            <button id="reset-btn">
+            <button id="stop-btn" class="button">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+            <button id="reset-btn" class="button active_btn">
                 <i class="fa-solid fa-rotate-left"></i>
             </button>
         </div>
     </div>
         
 </body>
-<script src="/Project/Pomodoro/script.js"></script>
+<script src="script.js"></script>
 </html>
